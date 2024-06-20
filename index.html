@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile share modal</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+</head>
+<body>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="wrapper">
+        <div class="cardwrapper">
+            <div class="img">
+                <img src="profile.jpg" alt="">
+            </div>
+            <div class="user-name">
+               <h2>ANKIT KUMAR</h2>
+            </div>
+            <div class="founder">
+                <p>Founder, acubesite</p>
+            </div>
+            <div class="button-group">
+                <button onclick="openmodal()" class="sharebtn">
+                    <i class="fa-solid fa-share" id="sybl"></i>
+                    <div class="txt"> Share My Profile</div>
+                </button>
+                <button  onclick="following()" class="btn">Follow me</button>
+            </div>
+        </div>
+    </div>
+
+    <!--modal-->
+
+    <div class="modal">
+        <div class="modal-header">
+            <h1>Share My Profile</h1>
+            <div class="cross">
+                <i onclick="closemodal()" class="fa-solid fa-xmark"></i>
+
+            </div>
+        </div>
+        
+   <div>
+       <h3>share this via</h3>
+
+
+       <div class="icon-container">
+        <a href="#" class="icon" id="facebook">
+         <i class="fa-brands fa-facebook-f"></i>
+        </a>
+ 
+        <a href="#" class="icon" id="whatsapp">
+         <i class="fa-brands fa-whatsapp"></i>
+        </a>
+ 
+        <a href="https://www.linkedin.com/in/ankit-kumar-02247622a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="icon" id="linkdlin">
+         <i class="fa-brands fa-linkedin"></i>
+        </a>
+ <!-- <a href="https://www.w3schools.com/">Visit W3Schools.com!</a> -->
+        <a href="https://www.instagram.com/mr.acube?igsh=MWd3OWd1Z2Y5MTF5ZQ==" class="icon" id="instagram">
+         <i class="fa-brands fa-instagram"></i>
+        </a>
+ 
+        <a href="#" class="icon" id="twitter">
+         <i class="fa-brands fa-twitter"></i>
+        </a>
+      </div>
+    </div>
+   <div class="overlay" onclick="closemodal()"></div>
+
+
+
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
