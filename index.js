@@ -15,3 +15,11 @@ const closemodal=()=>{
     
    
 };
+
+var btn = document.querySelector("#btn");
+
+
+btn.addEventListener("click",function(){
+    btn.textContent ="Following";
+})
+
