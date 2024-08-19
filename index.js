@@ -16,10 +16,13 @@ const closemodal=()=>{
    
 };
 
-var btn = document.querySelector("#btn");
-
-
-btn.addEventListener("click",function(){
-    btn.textContent ="Following";
-})
+const button = document.getElementById("toggleButton");
+function toggleText() {
+    const button = document.getElementById("toggleButton");
+    if (button.innerHTML === "Follow") {
+        button.innerHTML = "Following";
+    } else {
+        button.innerHTML = "Follow";
+    }
+}
 
